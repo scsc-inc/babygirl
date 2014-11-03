@@ -21,7 +21,4 @@
 
 	</p> <?php echo anchor(base_url()."home/register", "Register"); ?>
 	
-	<div id="footer">
-		<p>Copywrite (c) 2014 www.scsc-inc.com All rights reserved</p>
-	</div>	
 </div>

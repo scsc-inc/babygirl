@@ -2,8 +2,10 @@
 
 	class  get_content extends CI_Model{
 	
-		function getall () {
-			$query = $this->db->query("select * from address_list");
+		function getsponsors () {
+			$query = $this->db->query("select * from sponsors");
 			return $query->result();
 		}
+		
+
 	}

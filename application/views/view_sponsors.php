@@ -1,17 +1,24 @@
 
 	<div id="content">
-		<?php 
+
+		<h1>My Sponsors</h1>
 		
+	
+		<?php 
+
+			echo validation_errors();
+	
 			foreach($results as $row){
 		
-				$title = $row->title;				
-				$text1 = $row->text1;				
-				$text2 = $row->text2;				
+				echo "<b>" . $row->sponsor_name . "</b><br>";
+
 			}
-			echo heading($title, 1); 
-		?>
+			
+		?>		
+		<p>
 		
-		<p><?php echo $text1; ?></p>
-		<p><?php echo $text2; ?></p>
+			<?php echo anchor(base_url()."index.php/home/sponsors_form", "Add Sponsor", array('class' => 'button')); ?>
 		
+		</p>
+
 	</div>

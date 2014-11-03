@@ -12,6 +12,7 @@
 		?>
 		
 		<p><?php echo $text1; ?></p>
+		<img  src= "assets/babygirl/simone.jpg" alt="Simone's picture">
 		<p><?php echo $text2; ?></p>
 		
 	</div>
